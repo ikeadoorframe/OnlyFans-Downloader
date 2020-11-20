@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>OnlyFans Downloader</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png">
+    <script type="text/javascript" src="/eel.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+  </head>
+  <body>
+    <div class="everything">
+      <div class="leftside">
+        <form action="">
+          <div class="input-field">
+            <input name="user" type="text" id="username" required />
+            <label for="username">Account Username:</label>
+          </div>
+          <div class="input-field">
+            <input name="token" type="text" id="access_token" required />
+            <label for="access_token">Access Token:</label>
+          </div>
+          <div class="input-field">
+            <input name="agent" type="text" id="user_agent" required />
+            <label for="user_agent">User Agent:</label>
+          </div>
+          <div class="limit-field">
+            <input onkeyup="this.value=this.value.replace(/[^\d]/,'')" id="post_amount" required />
+            <label for="post_amount">Post Limit:</label>
+          </div>
+        </form>
+        </div>
+      <div class='middle'>
+        <div class="buttons">
+          <button class="button" onclick="StartDownloading();" readonly>Start</button>
+        </div>
+        <div class="help">
+          <div class="questionmark">
+            ?
+          </div>
+          <div class="helptext">
+            The account to download from.
+          </div>
+        </div>
+        <div class="help">
+          <div class="questionmark">
+            ?
+          </div>
+          <div class="helptext">
+            Check the guide in readme.txt.
+          </div>
+        </div>
+        <div class="help">
+          <div class="questionmark">
+            ?
+          </div>
+          <div class="helptext">
+            Type "my user agent" into google.
+          </div>
+        </div>
+      </div>
+      <div class="feedback">
+        <div class="log">
+          Console Log
+          </div>
+        <textarea class="logtext" id="ConsoleLog" rows=16 cols=46 autofocus readonly></textarea>
+      </div>
+      <div class=watermarkbcimacunt><a href="https://www.youtube.com/channel/UCniLjcDxUrhH9MnVhoCIizA" target="popup">by ikeadoorframe</a></div>
+    </div>
+  </body>
+</html>

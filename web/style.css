@@ -1,0 +1,230 @@
+body{
+  background: rgb(35,13,79);
+  background: linear-gradient(90deg, rgba(35,13,79,1) 0%, rgba(38,74,149,1) 100%);
+}
+
+div.everything{
+  margin: 0px;
+  width: 675px;
+  height: 266px;
+  display:flex;
+}
+
+form {
+  margin: 15px;
+}
+.input-field {
+  margin-top: 20px;
+  color: white;
+  position: relative;
+  width: 250px;
+  height: 44px;
+  line-height: 44px;
+  user-select: none;
+}
+
+.limit-field {
+  margin-top: 20px;
+  color: white;
+  position: relative;
+  width: 150px;
+  height: 44px;
+  line-height: 44px;
+  user-select: none;
+}
+
+label {
+  font-family: "Courier New";
+  font-weight: 520;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #d3d3d3;
+  transition: 0.2s all;
+  cursor: text;
+}
+
+input {
+  font-family: "Courier New";
+  font-size: 18px;
+  font-weight: 520;
+  color: white;
+  background-color: transparent;
+  width: 83%;
+  border: 0;
+  outline: 0;
+  padding: 0.3rem 0;
+  border-bottom: 2px solid #3fa6c9;
+  box-shadow: none;
+}
+input:focus{
+  border-bottom: 2px solid #72f1f7;
+}
+input:focus~label,
+input:valid~label {
+  font-size: 14px;
+  top: -24px;
+  color: white;
+
+}
+div.buttons{
+  user-select: none;
+  position: absolute;
+  z-index: 2;
+  margin-top: 205px;
+  margin-left: 12px;
+  width: 140px;
+  user-select: none;
+}
+
+.button{
+  color: white;
+  outline: 0;
+  margin: 5px;
+  height: 41px;
+  width: 126px;
+  background-color: transparent;
+  border: 3px solid #3fa6c9;
+  border-radius: 10px;
+  font-family: "Courier New";
+  font-size: 18px;
+  font-weight: 520;
+  transition-duration: 0.4s;
+}
+
+.button:hover{
+  border: 3px solid #72f1f7;
+  background-color: rgba(255, 255, 255, 0.2);
+  user-select: none;
+}
+
+.button:active{
+  border: 3px solid #72f1f7;
+}
+
+div.feedback{
+  margin-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 105px;
+  border: 3px solid #3fa6c9;
+  border-radius: 15px;
+  flex-grow: 1;
+}
+
+div.leftside{
+  margin: 0px;
+  width: 140px;
+}
+
+.help{
+  background: linear-gradient(90deg, rgba(34,37,102,1) 0%, rgba(34,41,106,1) 100%);
+  border: 1px solid #3fa6c9;
+  margin: 15px;
+  margin-top: 20px;
+  margin-left: 100px;
+  overflow: hidden;
+  color: white;
+  height: 41px;
+  width: 41px;
+  border-radius: 10px;
+  user-select: none;
+  transition-duration: 0.4s;
+}
+
+.help:hover{
+  background: linear-gradient(90deg, rgba(34,37,102,0.8) 0%, rgba(35,54,121,0.8) 100%),
+              linear-gradient(white,white);
+  width: 210px;
+}
+
+.questionmark{
+  float: left;
+  padding-top: 11px;
+  height: 41px;
+  width: 41px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 520;
+  color: white;
+}
+
+.helptext{
+  font-size: 14px;
+  font-family: "Courier New";
+  margin-top: 5px;
+  margin-left: 45px;
+  padding: 0px;
+  word-break: normal;
+  color: white;
+  height: 40px;
+  width: 160px;
+}
+
+div.middle{
+  user-select: none;
+  z-index: 1;
+  float: left;
+  width: 50px;
+  height: 200px;
+}
+
+div.log{
+  margin: 5px;
+  margin-left: 260px;
+  font-size: 11px;
+  font-family: "Courier New";
+  color: white;
+  user-select: none;
+}
+
+.logtext{
+  resize: none;
+  width: 345px;
+  outline: 0px;
+  border: 0px;
+  color: white;
+  font-size: 11px;
+  font-family: "Courier New";
+  margin-left: 5px;
+  background-color: transparent;
+}
+
+.logtext::-webkit-scrollbar {
+  width: 5px;
+  cursor: pointer;
+}
+
+/* Track */
+.logtext::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+.logtext::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+}
+.logtext::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+
+}
+
+div.watermarkbcimacunt {
+  position: absolute;
+  margin-left: 553px;
+  margin-top: 257px;
+  font-size: 11px;
+  font-family: "Courier New";
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
+}
